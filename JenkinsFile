@@ -35,14 +35,7 @@ pipeline {
                }
            }
         }
-       stage('Deploy') {
-            steps {
-                // Start the Docker Compose stack
-                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding',credentialsId: 'pankaj']])
-                    sh "docker-compose build"
-                    sh "docker-compose up -d"
-                }
-            }
+       
             stage("verify tooling") {
              steps {
                  sh '''
