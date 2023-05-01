@@ -53,7 +53,7 @@ services:
     volumes:
       - './mysql/mysql_data:/var/lib/mysql'
     ports:
-      - "3.108.195.70:3500:3500"
+      - "127.0.0.1:3500:3500"
     networks:
       - internal_network
   
