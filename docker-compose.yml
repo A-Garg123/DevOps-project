@@ -81,7 +81,7 @@ services:
       - '/app/node_modules'
       - './frontend:/app'
     ports:
-      - "127.0.0.1:3000:3000"
+      - "3000:3000"
     depends_on:
       - api
     networks:
@@ -94,7 +94,7 @@ services:
       - aquarius-frontend
     build: ./nginx
     ports:
-      - "127.0.0.1:3050:80"
+      - "3050:80"
     networks:
       - external_network
       - internal_network
