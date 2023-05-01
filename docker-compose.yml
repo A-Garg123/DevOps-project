@@ -74,7 +74,7 @@ services:
     container_name: aquarius-frontend-dev
     build: ./frontend
     environment:
-      - REACT_APP_API_URL=http://localhost:3050
+      - REACT_APP_API_URL=http://43.204.98.112:3050
       - REACT_APP_SECRET_KEY=xA0VkgSdrdSBKCSdhZuilI4DhvhTSQPs1Qyt7jODFmmrtQKNeerYgKwAQMCPegJHmOofdHFVVFuzwLQZxHgOKAluSCYZOcZjMYEYgWTPM0IuCtZA80bC8tsf+CXNmExWEtxHOvNkarvm5YjQlwwLa+IcMqWwiYrvdiOLFPXy4CBGInwfwZzI3ie6kift9yuXj2U9j6dZB/+bofGvwxeH1bVPlX9vkIQhE2nOmUDGEi/6ivqRZ1xn+uYpprr9YAZAwrGOZB0yg+k4m8vPLWfPWwHDbSmE/eWLK/HBVEbNHm4cGFRze3XnIMkpTizBoJXXfqoC10lwnzowDXN12ye0kg==
       - CHOKIDAR_USEPOLLING=true
     volumes:
@@ -94,7 +94,7 @@ services:
       - aquarius-frontend
     build: ./nginx
     ports:
-      - "43.204.98.112:3050:80"
+      - "127.0.0.1:3050:80"
     networks:
       - external_network
       - internal_network
