@@ -94,7 +94,7 @@ services:
       - aquarius-frontend
     build: ./nginx
     ports:
-      - "3.110.100.225:3050:80"
+      - "43.204.98.112:3050:80"
     networks:
       - external_network
       - internal_network
