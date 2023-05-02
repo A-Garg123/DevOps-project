@@ -14,7 +14,7 @@ const Header = () => {
     };
     return(
         <Navbar collapseOnSelect bg="primary" variant="dark" expand="md" fixed="top">
-            <Navbar.Brand href="/">Devops_Project</Navbar.Brand>
+            <Navbar.Brand href="/">Devops_Project_new_project_for_evaluation</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 {user && <div className="d-md-none"><Navigation/></div>}
